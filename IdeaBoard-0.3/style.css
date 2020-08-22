@@ -6,7 +6,7 @@
  
 .toolbar{
     width: 100%;
-    background-color: #444444;
+    background-color: #27496d;
     overflow: auto;
 }
  
@@ -16,17 +16,17 @@
     text-align: center;
     padding: 6px 5px;
     transition: all 0.5s ease;
-    color: white;
+    color: #27496d;
 }
  
 /* Change color on hover */
 .toolbar a:hover {
-    background-color: #000;
+    background-color: #4D4D4D;
   }
  
 /* Change color on selected icon */
 .selected {
-    background-color: #000; 
+    background-color: #4D4D4D; 
 }
  
 #my-canvas{
