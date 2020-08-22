@@ -1,1 +1,1 @@
-# IdeaBoard-0.4
+# IdeaBoard-0.3
