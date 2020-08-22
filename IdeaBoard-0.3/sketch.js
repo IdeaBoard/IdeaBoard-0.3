@@ -41,7 +41,7 @@ function draw(e) {
 
 function eraser() {
 
-  currentSize = 50;
+  currentSize = currentSize;
   currentColor = currentBg;
   console.log (currentColor);
   console.log (currentBg);
@@ -59,10 +59,14 @@ function clear_can() {
 window.addEventListener("resize", resize);
 
 // add event listeners to trigger on different mouse events
+
+document.addEventListener("touchstart", setPosition);
+document.addEventListener("touchmove", draw);
+document.addEventListener("touchend", setPosition);
 document.addEventListener("mousemove", draw);
 document.addEventListener("mousedown", setPosition);
-document.addEventListener("mouseenter", setPosition);
-document.getElementById('pen').addEventListener('mousemove', draw);
+document.addEventListener("mouseup", setPosition);
+
 
  document.getElementById('colorpicker').addEventListener('change', function() {
   currentColor = this.value;
@@ -84,4 +88,3 @@ document.getElementById('mySelect').addEventListener('change', function() {
   console.log(currentSize);
 
 });
-
